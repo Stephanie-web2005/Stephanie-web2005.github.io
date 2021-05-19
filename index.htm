@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Figuras de acción IRON MAN</title>
+    <link rel="icon" href="https://img.icons8.com/fluent/50/000000/iron-man.png">
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Orbitron&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ::selection{
+            background-color: rgb(212, 85, 85);
+        }
+        html,body{
+            display: grid;
+            height: 100%;
+            place-items: center;
+            text-align: center;
+            background: #131419;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar{
+            width: 12px;
+            background-color: #F5F5F5;
+        }
+        ::-webkit-scrollbar-track{
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+            border-radius: 10px;
+            background-color: #fde7c5;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #D62929;
+            background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.274) 50%,
+        transparent,transparent);
+            transition: all 0.4s;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: #E5be01;
+            transition: all 0.4s;
+        }  
+        .title{
+            font-size: 3em;
+            font-family:  'Orbitron', sans-serif;   
+            font-weight: bolder;
+            text-align: center;
+            background-image: url(https://i.pinimg.com/originals/42/f9/02/42f9027f931cdd29155c659d0ecaac44.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            padding: 1.2em;
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+        .colorillo{
+            color: rgb(212, 175, 55);
+        }
+        .colorillo1{
+            color: rgb(211, 0, 0);
+        }
+        .wrapper{
+            height: 60px;
+            width: 90vh;
+            background: #131419;
+            line-height: 60px;
+            border-radius: 50px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .5), -3px -3px 7px rgba(255, 255, 255, 0.05);
+            place-content: center;
+            text-align: center;
+            font-family: 'Archivo Black', sans-serif;
+        }
+        .wrapper nav{
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+        .subtitle{
+            margin-right: 30em;
+            margin-top: 7em;
+            font-size: 30px;
+            color: #fff;
+            text-align: left;
+            font-family: 'Baloo 2', cursive;
+        }
+        .texto{
+            font-size: 1.5em;
+            margin-top: 50px;
+            margin-right: 7em;
+            margin-left: 7em;
+            color: #fff;
+            text-align: justify;
+            font-weight: 500;
+            font-family: 'Baloo 2', cursive;  
+        }
+        h3{
+            margin-left: 3em;
+            font-size: 50px;
+        }
+        .parrafo{
+            font-size: 25px;
+            color: #fff;
+            text-align: justify;
+            margin-right: 9em;
+            margin-left: 9em;
+            margin-top: 2.5em;
+            font-family: 'Baloo 2', cursive;
+            font-weight: 500;
+        }
+        .pie{
+            color: #fff;
+            margin-top: 10em;
+        }
+        .link1{
+            display: block;
+            width: 9em;
+            flex-direction: row;
+            background: #131419;
+            color: #fff;
+            font-weight: bold;
+            padding: auto;
+            text-decoration: none;
+            border-radius: 50px;
+            position: center;
+        }
+        .link1:hover{
+            background-color: rgba(204, 204, 204, 0.438);
+            transition: 0.5s;
+        }
+        .container1{
+            position: relative; 
+            display: flex;
+            flex-direction: row;
+            margin: 1.2em;
+            padding-left: 1.8em;
+            justify-content: center;
+        }
+        h4{
+            color: #fff;
+            letter-spacing: 0.01px;
+            font-family: 'Baloo 2', cursive;
+        }
+        .box{
+            padding: 40px;
+            height: 26em;
+            margin: 3em;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        img{
+            padding:1px;
+            border:2px solid #f38484;
+        }
+        table, th, td{
+            border: 9px solid rgb(247, 33, 33);
+            border-collapse: collapse;
+            color: #fff;
+            margin-left: 7.3em;
+            width: 81%;
+            font-family: 'Baloo 2', cursive;
+        }
+        td, th{
+            padding: 1.2rem;
+        }
+        .container{
+            margin: 1.5rem;
+        }
+        a{
+            text-decoration: underline;
+            color: #fff;
+            transition: all 0.5s;
+            font-family: 'Kanit', sans-serif;
+        }
+        .link {
+            color: #FFF;
+            transition: all 0.3s;
+            position: relative;
+            font-family: 'Kanit', sans-serif;
+            font-weight: bold;
+            font-size: 0.91em;
+            text-decoration: none;
+            width: 20vh;
+            margin-top: 1.2rem;
+            padding: 0.8em;
+        }
+        .link span {
+            transition: all 0.3s;
+        }
+        .link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.3s;
+            border-radius: 10px;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: rgba(255, 72, 0, 0.87);
+            border-bottom-color: rgba(224, 140, 30, 0.842);
+            transform: scale(0.1, 1);
+        }
+        .link:hover span {
+            letter-spacing: 2px;
+        }
+        .link:hover::before {
+            opacity: 1; 
+            transform: scale(1, 1); 
+        }
+        .link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all 0.3s;
+            background-color: rgba(255, 83, 83, 0.623);
+        }
+        .link:hover::after {
+            opacity: 0; 
+            transform: scale(0.1, 1);
+        }
+        .link:active{
+            color: rgba(255, 30, 0, 0.397);
+        }
+        footer{
+            background-color: rgba(247, 33, 33, 0.514);
+            background-size: 100% 100%;
+            padding-left: 14em;
+            padding-right: 14em;
+            padding-bottom: 3em;
+            padding-top: 3em;
+            font-size: 19px;
+        }
+        h5{
+            font-size: 1.2em;
+        }
+        .overflowTest {
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            width: 50%;
+            height: 120px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            text-align: justify;
+        }
+        .btn{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>
+                <span class="colorillo">Figuras de acción de </span> <br> <span class="colorillo1">IRON MAN</span> 
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <nav>        
+                <a href="#" class="link1">Home</a>
+                <a href="#toibis" class="link1">Toy byz</a>
+                <a href="#Hasbro" class="link1">Hasbro</a>
+                <a href="#Hot_Toys" class="link1">Hot Toys</a>
+                <a href="#S_H_Figuarts" class="link1">S.H.Figuarts</a>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <section>
+            <article>
+                <p class="texto">
+                    Iron man es un súper héroe del universo de Marvel, siendo muy característico por su personalidad y su extravagancia, también por su valentía y resolución por dar fin a todo problema que se le imponga. La identidad secreta de este gran héroe es Tony Stark, un multimillonario empresario, filántropo, genio y playboy; el cual debido a todo lo sucedido en su vida, tal como una gran explosión  que casi lo mata, lo condujeron a la creación de su forma de vivir, obligandolo a cargar toda su vida con el famoso reactor ARK. El, gracias a su personalidad y a su condición, crea la primera armadura del famoso Iron man. <br>
+                    A continuación podrán observar algunas de las figuras de acción basadas en los diferentes tipos de armaduras que tuvo a lo largo de su carrera, las cuales fueron recreadas por conocidas marcas como:         
+                </p>
+            </article>
+        </section>
+        <section>
+            <article id="toibis">
+                <div class="subtitle">
+                    <h3>
+                        TOY BIZ
+                    </h3>
+                </div>
+                <div class="container1">
+                    <div class="box">
+                        <h4>Iron Man Hulk Bus</h4>
+                        <img src="https://i.pinimg.com/originals/5c/11/fd/5c11fd49ba075fccd2c5a1d24519785e.jpg" alt="Toy biz marvel legends iron man hulk buster" height="200px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-555411299-marvel-legends-legendarios-jinetes-figura-iron-man-hulk-bus-_JM" target="_blank" class="link">COMPRAR</a>    
+                    </div>   
+                    <div class="box">   
+                        <h4>Iron Man Series 8</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQob21bxvIZktkU2_N0exEz66DGRi9apykqZqeIQePl952_bSXbYTLVSauXkLtB7wg9w4E&usqp=CAU" alt="Toy biz marvel legends iron man Series 8" height="250px" width="190px">
+                        <a href="https://www.ebay.com/itm/2004-Toy-Biz-Marvel-Legends-Series-VIII-8-Iron-Man-Armadura-Moderna-Nuevo-en-paquete-con-ultrons-/254855190452?_trksid=p2349624.m46890.l49286" target="_blank" class="link">COMPRAR</a>      
+                    </div>   
+                    <div class="box">
+                        <h4>Iron Man Series 1</h4>
+                        <img src="https://i.ebayimg.com/images/g/28UAAOSwKp1eT6tC/s-l640.jpg" alt="Toy biz marvel legends iron man Series 1" height="250px" width="190px">
+                        <a href="https://www.ebay.com/itm/Marvel-Leyendas-Serie-1-figura-de-hombre-de-hierro-con-libro-de-historietas-Juguete-Biz-2002-danado-/373540774054?_trksid=p2349624.m46890.l49286" target="_blank" class="link">COMPRAR</a>     
+                    </div>                     
+                </div>
+                <table>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>MARCA</th>
+                        <th>PRECIO</th>
+                    </tr>
+                    <tr>
+                        <td>Iron Man Hulk Buster</td>
+                        <td>TOY BIZ</td>
+                        <td>$568.990</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel Legends Iron Man Series 8</td>
+                        <td>TOY BIZ</td>
+                        <td>$143.848</td>
+                    </tr>
+                    <tr>
+                        <td>Marvel Legends Iron Man Series 1</td>
+                        <td>TOY BIZ</td>
+                        <td>$89.928</td>
+                    </tr>
+                </table>    
+            </article>
+            <article>
+                <p class="parrafo">Toy Biz era una empresa de juguetes estadounidense que más tarde se convirtió en una subsidiaria de Marvel Enterprises / Entertainment. Era mejor conocido por producir figuras de acción, juguetes de peluche y juegos de rol de varias marcas y personajes con licencia.</p>
+            </article>
+        </section>
+        <section>
+            <article id="Hasbro">
+                <div class="subtitle">
+                    <h3>
+                        Hasbro
+                    </h3>
+                </div>
+                <div class="container1">
+                    <div class="box">
+                        <h4>Iron Man 80 Años</h4>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_602583-MCO32148873733_092019-V.jpg" alt="Hasbro Marvel Legends 80 Años Iron Man" height="250px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-533231923-marvel-legends-80-anos-iron-man-figura-hasbro-nueva-_JM" target="_blank" class="link">COMPRAR</a>    
+                    </div>   
+                    <div class="box">   
+                        <h4>Iron Man Silver Centurión</h4>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_844478-MCO44582862440_012021-O.jpg" alt="Hasbro Marvel Legends Iron Man Silver Centurión" height="260px" width="160px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-601746821-marvel-legends-iron-man-silver-centurion-figura-hasbro-nueva-_JM" target="_blank" class="link">COMPRAR</a>      
+                    </div>   
+                    <div class="box">
+                        <h4>Marvel Iron Man Infinity War</h4>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_933799-MCO31716222863_082019-O.jpg" alt="Hasbro Marvel Legends Avengers Infinity War Iron Man" height="260px" width="160px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-577469621-marvel-legends-avengers-infinity-war-iron-man-hasbro-usada-_JM" target="_blank" class="link">COMPRAR</a>     
+                    </div>                     
+                </div>
+                <div class="tabla">
+                    <table>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>MARCA</th>
+                            <th>PRECIO</th>
+                        </tr>
+                        <tr>
+                            <td>Marvel Legends Iron Man 80 Años</td>
+                            <td>Hasbro</td>
+                            <td>$180.000</td>
+                        </tr>
+                        <tr>
+                            <td>Marvel Legends Iron Man Silver Centurión</td>
+                            <td>Hasbro</td>
+                            <td>$150.000</td>
+                        </tr>
+                        <tr>
+                            <td>Marvel Legends Avengers Infinity War Iron Man</td>
+                            <td>Hasbro</td>
+                            <td>$199.900</td>
+                        </tr>
+                    </table>
+                </div>       
+            </article>
+            <article>
+                <p class="parrafo">
+                    Hasbro fue fundada en 1923 por tres hermanos: Herman, Helal y Henry Hassenfeld. La predecesora fue una empresa textil, Hassenfeld Brothers. Posteriormente se expandió al mercado de útiles escolares.
+                </p>
+                <p class="parrafo">
+                    En la década de 1940, la empresa fabricó con éxito el primer juguete: una serie de suministros médicos. Sin embargo, no fueron reconocidos hasta que George Lerner inventó el juguete insignia "Mr. Potato" en 1952. Joe, especialmente en 1964, tenía como objetivo entrar en el mercado de juguetes para niños.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article id="Hot_Toys">
+                <div class="subtitle">
+                    <h3>
+                        Hot Toys
+                    </h3>
+                </div>
+                <div class="container1">
+                    <div class="box">
+                        <h4>Iron Man 3 Mark 17 Heart</h4>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_643552-MCO33013296116_112019-O.jpg" alt="Hot Toys Iron Man 3 Movie Masterpiece Iron Man Mark 17 Heart" height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-543586874-hot-toys-iron-man-3-movie-masterpiece-iron-man-mark-17-heart-_JM" target="_blank" class="link">COMPRAR</a>    
+                    </div>   
+                    <div class="box">
+                        <h4>Iron Man Mark Vii</h4>   
+                        <img src="https://i.pinimg.com/originals/57/86/30/578630a2a863af1ede36ce5943d99af0.jpg" alt="Hot Toys Iron Man Mark Vii Los Vengadores Escala 1:6 Figura" height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-608091319-hot-toys-iron-man-mark-vii-los-vengadores-escala-1-6-figura-_JM" target="_blank" class="link">COMPRAR</a>      
+                    </div>   
+                    <div class="box">
+                        <h4>Iron Man Mark Xlvii</h4>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_606069-MCO44299630670_122020-O.jpg" alt="Hot Toys Spider-man Regreso A Casa Iron Man Mark Xlvii 47 F" height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-598046077-hot-toys-spider-man-regreso-a-casa-iron-man-mark-xlvii-47-f-_JM" target="_blank" class="link">COMPRAR</a>     
+                    </div>                     
+                </div>
+                <div class="tabla">
+                    <table>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>MARCA</th>
+                            <th>PRECIO</th>
+                        </tr>
+                        <tr>
+                            <td>Hot Toys Iron Man 3 Movie Masterpiece Iron Man Mark 17 Heart</td>
+                            <td>HOT TOYS</td>
+                            <td>$2.803.000</td>
+                        </tr>
+                        <tr>
+                            <td>Hot Toys Iron Man Mark Vii Los Vengadores Escala 1:6 Figura</td>
+                            <td>HOT TOYS</td>
+                            <td>$3.556.000</td>
+                        </tr>
+                        <tr>
+                            <td>Hot Toys Spider-man Regreso A Casa Iron Man Mark Xlvii 47 F</td>
+                            <td>HOT TOYS</td>
+                            <td>$3.140.401</td>
+                          </tr>
+                    </table>
+                </div>       
+            </article>
+            <article>
+                <p class="parrafo">
+                    Fabrica de juguetes basada en Hong Kong, consolidada en el año 2000 por Howard Chan. Principalmente esta se ha dedicado en realizar figuras de acción a escala 1/6 a gran detalle destacando en el mercado de los coleccionistas, al igual que los aficionados a las películas, series, etc. Esta destaca también en cuanto a su precio debido a que cada una de sus figuras tiene un gran valor siendo así poco accesibles pero de alta lujosidad. Cabe recalcar que esta marca también produce figuras a menor y mayor escala. 
+                </p>
+            </article>
+        </section>
+        <section>
+            <article id="S_H_Figuarts">
+                <div class="subtitle">
+                    <h3>
+                        S.H.Figuarts
+                    </h3>
+                </div>
+                <div class="container1">
+                    <div class="box">
+                        <h4>Iron Man Mk50 Nano Weapon</h4>
+                        <img src="https://i.pinimg.com/originals/78/54/a9/7854a9760df0e9163e9fff4c82a43abd.jpg" alt="Bandai S.h.figuarts Marvel Iron Man Mk50 Nano Weapon Set 2" height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-601219435-bandai-shfiguarts-marvel-iron-man-mk50-nano-weapon-set-2-_JM" target="_blank" class="link">COMPRAR</a>    
+                    </div>   
+                    <div class="box">
+                        <h4>Iron Man Mark 85 End Game</h4>   
+                        <img src="http://i.ebayimg.com/images/g/47cAAOSwgftfL3cm/s-l500.jpg" alt="Iron Man Mark 85 (final Battle Edition) - S.h.figuarts
+                        " height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-598339089-iron-man-mark-85-final-battle-edition-shfiguarts-_JM" target="_blank" class="link">COMPRAR</a>      
+                    </div>   
+                    <div class="box">
+                        <h4>Iron Man Mark 43</h4>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61rao5w2kwL._AC_SY606_.jpg" alt="Iron Man Mark 43 Sh Figuarts Action Figure/figura De Accion" height="260px" width="190px">
+                        <a href="https://articulo.mercadolibre.com.co/MCO-570754183-iron-man-mark-43-sh-figuarts-action-figurefigura-de-accion-_JM" target="_blank" class="link">COMPRAR</a>     
+                    </div>                     
+                </div>
+                <div class="tabla">
+                    <table>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>MARCA</th>
+                            <th>PRECIO</th>
+                        </tr>
+                        <tr>
+                            <td>Bandai S.h.figuarts Marvel Iron Man Mk50 Nano Weapon Set 2</td>
+                            <td>S.H.Figuarts</td>
+                            <td>$860.000</td>
+                        </tr>
+                        <tr>
+                            <td>Iron Man Mark 85 (final Battle Edition) - S.h.figuarts</td>
+                            <td>S.H.Figuarts</td>
+                            <td>$550.000</td>
+                        </tr>
+                        <tr>
+                            <td>Iron Man Mark 43 Sh Figuarts Action Figure/figura De Accion</td>
+                            <td>S.H.Figuarts</td>
+                            <td>$300.000</td>
+                          </tr>
+                    </table>
+                </div>       
+            </article>
+            <article>
+                <p class="parrafo">SH Figuarts es una popular serie de personajes coleccionables de alta calidad fabricada por Bandai. La serie de juguetes debutó en 2008, y sus etiquetas de precio más altas y los detalles precisos de los personajes están dirigidos a los fanáticos adultos de la serie.
+                Esta marca principalmente ha producido figuras basadas en animes y demás series japonesas, pero también tiene una linea la cual está enfocada en los super héroes mayormente del mundo de marvel.  
+                </p>
+            </article>
+        </section>
+    </div>
+    <footer class="pie">
+            <div class="container">
+                <h5>La informacion fue tomada de:</h5>
+                <a href="https://en.wikipedia.org/wiki/Toy_Biz" target="_blank">Toy Biz</a>
+                <a href="https://es.wikipedia.org/wiki/Hasbro#Juegos,_juguetes_y_coleccionables" target="_blank">Hasbro</a>
+                <a href="https://en.wikipedia.org/wiki/Hot_Toys" target="_blank" target="_blank">Hot Toys</a>
+                <a href="https://bandai.fandom.com/wiki/S.H._Figuarts#Other_Toys" target="_blank">S.H.Figuarts</a>
+            </div>
+            <div class="btn">
+                <p class="overflowTest">
+                    Esta pagina fue diseñada y realizada por Stephanie Sanchez, la cual cursa grado 10 en el colegio Skolmi. Tiene un fin unicamente academico y/o pedagogico, sin ningun motivo lucrativo. En todas las imagenes creditos a su autor.
+                </p>
+                <p class="overflowTest">
+                   En esta pagina web, se utilizan los diferentes elementos del css, ello con el fin de hacer la pagina mas vistosa y ordenada; el tema presentado, es de gran interes para los coleccionistas y fans de esta serie de figuras, al igual que los fans del personaje en si, sea de comic o peliculas, haciendo que estas figuras sean muy preciadas, de alli su precio tan elevado.
+                </p>
+            </div>
+    </footer>
+</body>
+</html>
